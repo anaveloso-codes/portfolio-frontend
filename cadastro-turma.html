@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Turma | Portfólio ADS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <a href="index.html" class="logo">Portfólio <span>ADS</span></a>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="cadastro-turma.html" class="ativo">Turmas</a></li>
+                    <li><a href="cadastro-aluno.html">Alunos</a></li>
+                    <li><a href="cadastro-projeto.html">Projetos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="titulo-pagina">
+                <h1>Cadastro de Turma</h1>
+                <p>Preencha os dados da turma.</p>
+            </div>
+
+            <section class="cartao">
+                <form class="formulario" id="form-turma">
+                    <div class="campo">
+                        <label for="nome">Nome da turma</label>
+                        <input type="text" id="nome" placeholder="Ex.: 1DTM" required>
+                    </div>
+                    <div class="linha-campos">
+                        <div class="campo">
+                            <label for="curso">Curso</label>
+                            <input type="text" id="curso" placeholder="Ex.: Análise e Desenvolvimento de Sistemas" required>
+                        </div>
+                        <div class="campo">
+                            <label for="periodo">Período</label>
+                            <select id="periodo" required>
+                                <option value="">Selecione</option>
+                                <option>Manhã</option>
+                                <option>Tarde</option>
+                                <option>Noite</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="acoes-form">
+                        <button type="reset" class="btn btn-vermelho">Limpar</button>
+                        <button type="submit" class="btn btn-roxo" id="btn-salvar">Salvar turma</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="cartao" style="margin-top: 32px;">
+                <h2>Turmas cadastradas</h2>
+                <table class="tabela">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Curso</th>
+                            <th>Período</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="lista-turmas">
+                        <tr><td colspan="4" class="vazio">Carregando turmas...</td></tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <footer class="rodape">SENAI · Análise e Desenvolvimento de Sistemas · 2026</footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/cadastro-turma.js"></script>
+</body>
+
+</html>

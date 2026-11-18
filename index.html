@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início | Portfólio ADS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <a href="index.html" class="logo">Portfólio <span>ADS</span></a>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html" class="ativo">Início</a></li>
+                    <li><a href="cadastro-turma.html">Turmas</a></li>
+                    <li><a href="cadastro-aluno.html">Alunos</a></li>
+                    <li><a href="cadastro-projeto.html">Projetos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="destaque">
+                <p class="cargo">SENAI · Análise e Desenvolvimento de Sistemas</p>
+                <h1>Conheça os portfólios da turma</h1>
+                <p>Projetos, tecnologias e habilidades dos alunos de Análise e Desenvolvimento de Sistemas.</p>
+                <a href="cadastro-aluno.html" class="btn btn-roxo">Cadastrar meu portfólio</a>
+            </section>
+
+            <h2>Turmas</h2>
+            <div class="filtro-turmas" id="filtro-turmas">
+                <button class="chip ativo">1DTM</button>
+                <button class="chip">1DTT</button>
+                <button class="chip">1DTN</button>
+            </div>
+
+            <div class="grade-alunos" id="grade-alunos">
+                <a href="portfolio.html" class="cartao card-aluno">
+                    <img class="avatar" src="img/foto-ana.png" alt="Foto de Ana Luiza">
+                    <h3>Ana Luiza Veloso Barbosa</h3>
+                    <p>Desenvolvedora Full Stack</p>
+                    <span class="btn btn-fantasma btn-pequeno">Ver portfólio</span>
+                </a>
+                <a href="portfolio.html" class="cartao card-aluno">
+                    <div class="avatar roxo">BS</div>
+                    <h3>Bruno Souza</h3>
+                    <p>Desenvolvedor Front-end</p>
+                    <span class="btn btn-fantasma btn-pequeno">Ver portfólio</span>
+                </a>
+                <a href="portfolio.html" class="cartao card-aluno">
+                    <div class="avatar">LM</div>
+                    <h3>Lucas Martins</h3>
+                    <p>Desenvolvedor Back-end</p>
+                    <span class="btn btn-fantasma btn-pequeno">Ver portfólio</span>
+                </a>
+                <a href="portfolio.html" class="cartao card-aluno">
+                    <div class="avatar roxo">JP</div>
+                    <h3>Julia Pereira</h3>
+                    <p>UX/UI Designer</p>
+                    <span class="btn btn-fantasma btn-pequeno">Ver portfólio</span>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="rodape">SENAI · Análise e Desenvolvimento de Sistemas · 2026</footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

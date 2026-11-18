@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Aluno | Portfólio ADS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <a href="index.html" class="logo">Portfólio <span>ADS</span></a>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="cadastro-turma.html">Turmas</a></li>
+                    <li><a href="cadastro-aluno.html" class="ativo">Alunos</a></li>
+                    <li><a href="cadastro-projeto.html">Projetos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="titulo-pagina">
+                <h1>Cadastro de Aluno</h1>
+                <p>Esses dados aparecem no seu portfólio.</p>
+            </div>
+
+            <section class="cartao">
+                <form class="formulario" id="form-aluno">
+                    <div class="linha-campos">
+                        <div class="campo">
+                            <label for="nome">Nome completo</label>
+                            <input type="text" id="nome" placeholder="Seu nome" required>
+                        </div>
+                        <div class="campo">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" placeholder="voce@email.com" required>
+                        </div>
+                    </div>
+                    <div class="linha-campos">
+                        <div class="campo">
+                            <label for="turma">Turma</label>
+                            <select id="turma" required>
+                                <option value="">Carregando turmas...</option>
+                            </select>
+                        </div>
+                        <div class="campo">
+                            <label for="foto">Foto (link)</label>
+                            <input type="text" id="foto" placeholder="Link da foto ou img/foto.png">
+                        </div>
+                    </div>
+                    <div class="campo">
+                        <label for="sobre">Quem é você</label>
+                        <textarea id="sobre" placeholder="Conte um pouco sobre você"></textarea>
+                    </div>
+                    <div class="campo">
+                        <label for="areas">Áreas de atuação e experiências</label>
+                        <textarea id="areas" placeholder="Ex.: Desenvolvimento web, estágio em suporte de TI"></textarea>
+                    </div>
+                    <div class="campo">
+                        <label for="tecnologias">Tecnologias conhecidas</label>
+                        <input type="text" id="tecnologias" placeholder="C#, HTML, CSS, JavaScript, SQL Server">
+                        <small>Separe por vírgula.</small>
+                    </div>
+                    <div class="campo">
+                        <label for="habilidades">Habilidades e certificados</label>
+                        <input type="text" id="habilidades" placeholder="Trabalho em equipe, Certificado Git e GitHub">
+                        <small>Separe por vírgula.</small>
+                    </div>
+                    <div class="campo">
+                        <label for="ferramentas">Ferramentas</label>
+                        <input type="text" id="ferramentas" placeholder="Visual Studio, VS Code, Figma, Git">
+                        <small>Separe por vírgula.</small>
+                    </div>
+                    <div class="linha-campos">
+                        <div class="campo">
+                            <label for="github">GitHub</label>
+                            <input type="url" id="github" placeholder="https://github.com/...">
+                        </div>
+                        <div class="campo">
+                            <label for="linkedin">LinkedIn</label>
+                            <input type="url" id="linkedin" placeholder="https://linkedin.com/in/...">
+                        </div>
+                    </div>
+                    <div class="acoes-form">
+                        <button type="reset" class="btn btn-vermelho">Limpar</button>
+                        <button type="submit" class="btn btn-roxo" id="btn-salvar">Salvar aluno</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="cartao" style="margin-top: 32px;">
+                <h2>Alunos cadastrados</h2>
+                <table class="tabela">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>E-mail</th>
+                            <th>Turma</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="lista-alunos">
+                        <tr><td colspan="4" class="vazio">Carregando alunos...</td></tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <footer class="rodape">SENAI · Análise e Desenvolvimento de Sistemas · 2026</footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/cadastro-aluno.js"></script>
+</body>
+
+</html>

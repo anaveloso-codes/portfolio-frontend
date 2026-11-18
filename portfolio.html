@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Ana Luiza Veloso Barbosa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <a href="index.html" class="logo">Portfólio <span>ADS</span></a>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="cadastro-turma.html">Turmas</a></li>
+                    <li><a href="cadastro-aluno.html">Alunos</a></li>
+                    <li><a href="cadastro-projeto.html">Projetos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Quem é você -->
+            <section class="hero">
+                <div class="hero-info">
+                    <p class="cargo">Desenvolvedora Web</p>
+                    <h1 id="nome">Oi, meu nome é Ana Luiza</h1>
+                    <p class="descricao" id="sobre">Faço o curso de Análise e Desenvolvimento de Sistemas no SENAI. Gosto de
+                        criar sistemas completos, do banco de dados até a tela.</p>
+                    <div class="hero-botoes">
+                        <a href="#projetos" class="btn btn-roxo">Projetos</a>
+                        <a href="https://github.com/anaveloso-codes" target="_blank" class="btn btn-fantasma" id="link-github">GitHub</a>
+                        <a href="#" target="_blank" class="btn btn-fantasma" id="link-linkedin">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="hero-foto">
+                    <img id="foto" src="img/foto-ana.png" alt="Foto de Ana Luiza Veloso Barbosa">
+                </div>
+            </section>
+
+            <div class="secoes">
+                <section class="cartao secao">
+                    <h3>Áreas de atuação e experiências</h3>
+                    <p id="areas">Desenvolvimento web, criação de APIs REST em C# e banco de dados SQL Server. Projetos feitos
+                        no curso de ADS do SENAI.</p>
+                </section>
+                <section class="cartao secao">
+                    <h3>Tecnologias conhecidas</h3>
+                    <div class="etiquetas" id="tecnologias">
+                        <span class="etiqueta">C#</span>
+                        <span class="etiqueta">ASP.NET Core</span>
+                        <span class="etiqueta">Entity Framework</span>
+                        <span class="etiqueta">SQL Server</span>
+                        <span class="etiqueta">HTML</span>
+                        <span class="etiqueta">CSS</span>
+                        <span class="etiqueta">JavaScript</span>
+                    </div>
+                </section>
+                <section class="cartao secao">
+                    <h3>Habilidades e certificados</h3>
+                    <div class="etiquetas" id="habilidades">
+                        <span class="etiqueta roxa">Trabalho em equipe</span>
+                        <span class="etiqueta roxa">Resolução de problemas</span>
+                        <span class="etiqueta roxa">Aprendizado rápido</span>
+                    </div>
+                </section>
+                <section class="cartao secao">
+                    <h3>Ferramentas</h3>
+                    <div class="etiquetas" id="ferramentas">
+                        <span class="etiqueta roxa">Visual Studio</span>
+                        <span class="etiqueta roxa">VS Code</span>
+                        <span class="etiqueta roxa">Git</span>
+                        <span class="etiqueta roxa">GitHub</span>
+                        <span class="etiqueta roxa">Figma</span>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Projetos: imagem e texto alternando de lado -->
+            <section id="projetos" class="projetos">
+                <h2>Projetos</h2>
+                <div id="lista-projetos" class="projetos">
+
+                <article class="projeto">
+                    <div class="projeto-imagem">Sistema de Portfólio</div>
+                    <div class="projeto-info">
+                        <h3>Sistema de Portfólio</h3>
+                        <p>Cadastro de turmas, alunos e projetos com o portfólio de cada aluno. API em C# com
+                            SQL Server e telas em HTML e CSS.</p>
+                        <div class="etiquetas"><span class="etiqueta">C#</span><span class="etiqueta">SQL Server</span><span class="etiqueta">HTML</span><span class="etiqueta">CSS</span></div>
+                        <a href="https://github.com/anaveloso-codes/portfolio-backend" target="_blank" class="btn btn-fantasma">Veja mais</a>
+                    </div>
+                </article>
+
+                <article class="projeto">
+                    <div class="projeto-imagem">Projeto Mecânica</div>
+                    <div class="projeto-info">
+                        <h3>Projeto Mecânica API</h3>
+                        <p>API para oficina mecânica: cadastro de clientes, veículos e usuários e agendamento de
+                            serviços.</p>
+                        <div class="etiquetas"><span class="etiqueta">C#</span><span class="etiqueta">ASP.NET Core</span><span class="etiqueta">EF Core</span></div>
+                        <a href="https://github.com/anaveloso-codes/ProjetoMecanica.Api" target="_blank" class="btn btn-fantasma">Veja mais</a>
+                    </div>
+                </article>
+
+                <article class="projeto">
+                    <div class="projeto-imagem">Clínica Veterinária</div>
+                    <div class="projeto-info">
+                        <h3>Clínica Veterinária API</h3>
+                        <p>API para clínica veterinária: cadastro de tutores, pets e veterinários e agendamento de
+                            consultas.</p>
+                        <div class="etiquetas"><span class="etiqueta">C#</span><span class="etiqueta">EF Core</span><span class="etiqueta">SQL Server</span></div>
+                        <a href="https://github.com/anaveloso-codes/ClinicaVeterinaria" target="_blank" class="btn btn-fantasma">Veja mais</a>
+                    </div>
+                </article>
+
+                <article class="projeto">
+                    <div class="projeto-imagem">Biblioteca Central</div>
+                    <div class="projeto-info">
+                        <h3>Biblioteca Central API</h3>
+                        <p>API de biblioteca para cadastrar e consultar livros, com título, autor e ano de
+                            publicação.</p>
+                        <div class="etiquetas"><span class="etiqueta">C#</span><span class="etiqueta">ASP.NET Core</span><span class="etiqueta">EF Core</span></div>
+                        <a href="https://github.com/anaveloso-codes/biblioteca_central" target="_blank" class="btn btn-fantasma">Veja mais</a>
+                    </div>
+                </article>
+
+                <article class="projeto">
+                    <div class="projeto-imagem">Carrinho de Compras</div>
+                    <div class="projeto-info">
+                        <h3>Carrinho de Compras</h3>
+                        <p>Contador de itens do carrinho: a cada clique no botão a quantidade é atualizada na tela
+                            com JavaScript (manipulação do DOM).</p>
+                        <div class="etiquetas"><span class="etiqueta">HTML</span><span class="etiqueta">CSS</span><span class="etiqueta">JavaScript</span></div>
+                        <a href="https://github.com/anaveloso-codes/Carrinho-de-compras" target="_blank" class="btn btn-fantasma">Veja mais</a>
+                    </div>
+                </article>
+
+                <article class="projeto">
+                    <div class="projeto-imagem">Bio</div>
+                    <div class="projeto-info">
+                        <h3>Bio</h3>
+                        <p>Cartão de perfil com foto, nome, cidade e uma frase de apresentação, publicado no GitHub
+                            Pages.</p>
+                        <div class="etiquetas"><span class="etiqueta">HTML</span><span class="etiqueta">CSS</span></div>
+                        <a href="https://anaveloso-codes.github.io/Bio/" target="_blank" class="btn btn-fantasma">Veja mais</a>
+                    </div>
+                </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="rodape" id="rodape">Ana Luiza Veloso Barbosa · SENAI · Análise e Desenvolvimento de Sistemas · 2026</footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/portfolio.js"></script>
+</body>
+
+</html>

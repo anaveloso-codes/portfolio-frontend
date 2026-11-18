@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Projeto | Portfólio ADS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <a href="index.html" class="logo">Portfólio <span>ADS</span></a>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="cadastro-turma.html">Turmas</a></li>
+                    <li><a href="cadastro-aluno.html">Alunos</a></li>
+                    <li><a href="cadastro-projeto.html" class="ativo">Projetos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="titulo-pagina">
+                <h1>Cadastro de Projeto</h1>
+                <p>Cada aluno pode ter de 6 a 10 projetos no portfólio.</p>
+            </div>
+
+            <section class="cartao">
+                <form class="formulario" id="form-projeto">
+                    <div class="campo">
+                        <label for="aluno">Aluno</label>
+                        <select id="aluno" required>
+                            <option value="">Carregando alunos...</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label for="titulo">Título do projeto</label>
+                        <input type="text" id="titulo" placeholder="Ex.: Sistema de Delivery" required>
+                    </div>
+                    <div class="campo">
+                        <label for="descricao">Descrição</label>
+                        <textarea id="descricao" placeholder="O que o projeto faz e qual problema resolve" required></textarea>
+                    </div>
+                    <div class="campo">
+                        <label for="tecnologias">Tecnologias utilizadas</label>
+                        <input type="text" id="tecnologias" placeholder="HTML, CSS, JavaScript">
+                        <small>Separe por vírgula.</small>
+                    </div>
+                    <div class="linha-campos">
+                        <div class="campo">
+                            <label for="link">Link de acesso</label>
+                            <input type="text" id="link" placeholder="https://...">
+                        </div>
+                        <div class="campo">
+                            <label for="imagem">Imagem ou vídeo (link)</label>
+                            <input type="text" id="imagem" placeholder="https://...">
+                        </div>
+                    </div>
+                    <div class="acoes-form">
+                        <button type="reset" class="btn btn-vermelho">Limpar</button>
+                        <button type="submit" class="btn btn-roxo" id="btn-salvar">Salvar projeto</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="cartao" style="margin-top: 32px;">
+                <h2>Projetos do aluno <span class="contador" id="contador"></span></h2>
+                <table class="tabela">
+                    <thead>
+                        <tr>
+                            <th>Título</th>
+                            <th>Tecnologias</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="lista-projetos">
+                        <tr><td colspan="3" class="vazio">Escolha um aluno para ver os projetos.</td></tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <footer class="rodape">SENAI · Análise e Desenvolvimento de Sistemas · 2026</footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/cadastro-projeto.js"></script>
+</body>
+
+</html>
